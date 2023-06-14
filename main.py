@@ -19,23 +19,6 @@ async def on_ready():  # "allumer" le bot sur le serveur
 
 
 @bot.slash_command(guild_ids=guildid)
-async def command(ctx):
-    await ctx.respond("commands list :"
-                      "\n1. !idlist : to show top50 of crypto id."
-                      "\n2. !crypto cyptoid currencie : give you the price of the crypto set in the currencie (euro or usd)."
-                      "\n3. !asfloor : floor price of the Ancient Society collection."
-                      "\n4. !cometh : floor price of cometh spaceship collection."
-                      "\n5. !toonz : give you stats of the toonz nft collection."
-                      "\n6. !flagchart : give you the url to the chart of flag token."
-                      "\n7. !marketcap : to show you total capitalization of crypto market."
-                      "\n8. !msucup : give you floor of msu world cup tournament NFT collection."
-                      "\n9. !blacknano : give you floor price of black nano ledger NFT collection."
-                      "\n10. !raider : give you stats of raider character NFT collection."
-                      "\n11. !raidermob : give you stats of raider mob NFT collection."
-                      "\n12. !fearandgreed : give you the value of feer and greed index.")
-
-
-@bot.slash_command(guild_ids=guildid)
 async def crypto(ctx, cryptoid="", currencie=""):
 
     button = Button(label="reload", style=discord.ButtonStyle.gray)
